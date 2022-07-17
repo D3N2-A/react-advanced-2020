@@ -56,7 +56,7 @@ const Index = () => {
   };
   return (
     <>
-      {state.isModalOpen && <Modal modalContent={state.modalContent} />}
+      {state.isModalOpen && <Modal modalClose modalContent={state.modalContent} />}
       <form className="form" onSubmit={submitHandler}>
         <input
           type="text"
